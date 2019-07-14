@@ -17,8 +17,8 @@ public class Cartorio {
     private String email;
 
     @ManyToMany
-    @JoinTable
-    private List<Documento> documentoList = new ArrayList<>();
+    @JoinTable(name = "CARTORIO_DOCUMENTO")
+    private List<Documento> documentoList;
 
     public Cartorio() {
     }
